@@ -23,6 +23,8 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
+      color="white"
+      class="elevation-1"
       fixed
       app
     >
@@ -44,17 +46,8 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-container fill-height>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
-    <v-footer
-      app
-      absolute
-      inset
-    >
-      <span>&copy; 2019</span>
-    </v-footer>
   </v-app>
 </template>
 
