@@ -28,13 +28,7 @@
       fixed
       app
     >
-      <v-avatar
-        tile
-        class="ml-4"
-        size="44px"
-        style="cursor: pointer"
-        @click="$router.push('/')"
-      >
+      <v-avatar tile size="44px" style="cursor: pointer" @click="$router.push('/')">
         <img src="/app-logo.png" alt="logo">
       </v-avatar>
       <v-spacer />
