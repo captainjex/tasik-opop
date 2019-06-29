@@ -29,7 +29,7 @@
       app
     >
       <v-avatar tile size="44px" style="cursor: pointer" @click="$router.push('/')">
-        <img src="/app-logo.png" alt="logo">
+        <img src="/icon.png" alt="logo">
       </v-avatar>
       <v-spacer />
       <v-btn
