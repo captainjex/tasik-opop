@@ -21,15 +21,15 @@
           src="https://freedesignfile.com/upload/2013/03/Colorful-tree-5.jpg"
           class="grey lighten-2 my-2"
         />
-        <v-btn color="blue" block dark>
+        <v-btn color="#3B5998" depressed block dark>
           <v-icon left>
-            cloud_upload
+            fab fa-facebook-square
           </v-icon>
           Sign in with Facebook
         </v-btn>
-        <v-btn color="blue" block outline>
+        <v-btn color="black" block outline>
           <v-icon left>
-            cloud_upload
+            fab fa-google-plus-g
           </v-icon>
           Sign in with Google
         </v-btn>
