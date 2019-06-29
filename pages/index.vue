@@ -8,7 +8,6 @@
             outline
             icon
             large
-            dark
             :color="menu.color"
             fab
           >
@@ -18,9 +17,30 @@
         </v-flex>
       </v-layout>
     </v-container>
-    <v-layout class="white mt-3 elevation-1">
-      lol
-    </v-layout>
+
+    <v-container grid-list-lg class="white mt-3 elevation-1">
+      <h3 class="headline text-xs-center mb-2">
+        Explore Tasik
+      </h3>
+      <v-layout wrap>
+        <v-flex v-for="i in 6" :key="i" xs6>
+          <v-card flat>
+            <v-img src="https://cdn.vuetifyjs.com/images/cards/desert.jpg" height="150px" />
+            <v-card-text class="py-1 px-0">
+              <h3 class="subheading">
+                Konser Noah
+              </h3>
+              <div class="caption">
+                Sat, 31 Aug @ 10.00
+              </div>
+              <div class="body-1">
+                GRATIS
+              </div>
+            </v-card-text>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 
