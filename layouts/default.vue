@@ -23,11 +23,18 @@
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
-      v-if="false"
       fixed
       app
     >
-      <v-toolbar-title v-text="title" />
+      <v-avatar
+        tile
+        class="ml-4"
+        size="44px"
+        style="cursor: pointer"
+        @click="$router.push('/')"
+      >
+        <img src="/app-logo.png" alt="logo">
+      </v-avatar>
       <v-spacer />
       <v-btn
         icon
