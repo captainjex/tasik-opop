@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container fluid class="white">
+    <v-container fluid class="white elevation-2">
       <v-layout row wrap justify-center class="mt-2">
         <v-flex v-for="(menu, index) in indexMenus" :key="index" xs4 class="text-xs-center my-0 py-0">
           <v-btn
@@ -25,7 +25,7 @@
       </h3>
       <v-layout wrap>
         <v-flex v-for="(event, i) in events" :key="i" xs6>
-          <v-card flat>
+          <v-card style="cursor: pointer;" flat @click="$router.push(`/explore/${event.id}`)">
             <v-img :src="event.img" height="150px" />
             <v-card-text class="py-1 px-0">
               <h3 class="subheading" v-text="event.name" />
@@ -58,46 +58,7 @@
 </template>
 
 <script>
-import { indexMenus } from '../constants/menus'
-
-const events = [
-  {
-    img: 'https://user-images.githubusercontent.com/21119252/60812506-d4a43b80-a1bb-11e9-82f9-aae37f68d592.jpg',
-    name: 'Tasik Wedding Festival',
-    date: 'Sat, 31 Aug @ 10.00',
-    price: 'GRATIS'
-  },
-  {
-    img: 'https://user-images.githubusercontent.com/21119252/60812899-c0ad0980-a1bc-11e9-86d0-f0721fb5d528.jpg',
-    name: 'NGULISIK (Nguriling Kota Tasik)',
-    date: 'Sat, 31 Aug @ 10.00',
-    price: 'GRATIS'
-  },
-  {
-    img: 'https://user-images.githubusercontent.com/21119252/60812918-c6a2ea80-a1bc-11e9-963f-bd5d17a2233b.jpg',
-    name: 'Kelas Komunikasi Miracle',
-    date: 'Sat, 31 Aug @ 10.00',
-    price: 'GRATIS'
-  },
-  {
-    img: 'https://user-images.githubusercontent.com/21119252/60812936-d3274300-a1bc-11e9-88bc-21bd9d79761a.jpg',
-    name: 'TOF (Tasik Oktober Festival)',
-    date: 'Sat, 31 Aug @ 10.00',
-    price: 'GRATIS'
-  },
-  {
-    img: 'https://user-images.githubusercontent.com/21119252/60812942-d7536080-a1bc-11e9-8f1b-bb3d9b36645c.jpg',
-    name: 'Kuliner Pasar Mambo',
-    date: 'Sat, 31 Aug @ 10.00',
-    price: 'GRATIS'
-  },
-  {
-    img: 'https://user-images.githubusercontent.com/21119252/60812952-dc181480-a1bc-11e9-8830-22da98bab8ab.jpg',
-    name: 'KOLECER (Kota Literasi Cerdas)',
-    date: 'Sat, 31 Aug @ 10.00',
-    price: 'GRATIS'
-  }
-]
+import { indexMenus, events } from '../constants/menus'
 
 export default {
   data() {
