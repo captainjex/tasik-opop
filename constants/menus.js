@@ -1,3 +1,5 @@
+import { batikItems, anyamanItems } from './kerajinanItems'
+
 export const indexMenus = [
   { path: 'kerajinan', name: 'Kerajinan', icon: 'fas fa-shopping-bag', color: '#d64550' },
   { path: 'makanan', name: 'Makanan', icon: 'fas fa-utensils', color: '#ffc09f' },
@@ -49,4 +51,13 @@ export const events = [
     date: 'Sat, 31 Aug @ 10.00',
     price: 'GRATIS'
   }
+]
+
+export const kerajinans = [
+  { name: 'Anyaman Mendong', path: 'anyaman', items: anyamanItems },
+  { name: 'Batik', path: 'batik', items: batikItems },
+  { name: 'Kelom Gelis', path: 'anyaman', items: anyamanItems },
+  { name: 'Meubel', path: 'anyaman', items: anyamanItems },
+  { name: 'Sulaman', path: 'anyaman', items: anyamanItems },
+  { name: 'Anyam Bambu', path: 'anyaman', items: anyamanItems }
 ]

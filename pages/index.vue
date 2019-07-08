@@ -10,7 +10,7 @@
             large
             :color="menu.color"
             fab
-            @click.stop="bottomSheetEnabled = true"
+            :to="`/kerajinan`"
           >
             <v-icon large v-text="menu.icon" />
           </v-btn>
@@ -36,24 +36,6 @@
         </v-flex>
       </v-layout>
     </v-container>
-
-    <v-bottom-sheet v-model="bottomSheetEnabled">
-      <v-layout class="white py-4" justify-center>
-        <v-flex shrink class="text-xs-center my-0 py-0">
-          <v-btn
-            :class="$style.btnMenu"
-            outline
-            icon
-            large
-            :color="'#77cbb9'"
-            fab
-          >
-            <v-icon large v-text="'fas fa-tshirt'" />
-          </v-btn>
-          <p>Fashion</p>
-        </v-flex>
-      </v-layout>
-    </v-bottom-sheet>
   </div>
 </template>
 
@@ -64,7 +46,6 @@ export default {
   data() {
     return {
       indexMenus,
-      bottomSheetEnabled: false,
       events
     }
   }
